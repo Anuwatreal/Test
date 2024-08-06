@@ -1,0 +1,75 @@
+© Gunduguiivvisaria v Login | CompTIA C Practice Details | CompTiA
+
+learn, security -701#quiz/details,
+
+‘ome
+
+Strengths &
+Weaknesses Practice Dashboard Notes Bookmarks
+
+© tering Pian
+
+4Back | Lesson 3: Explain Cryptographic Solutions Reset Questions
+[By Game center
+
+G@ Foner
+
+21 of 21 00:00:30 (00:00:30 00:00:00
+ER Pas
+1 00% Questions Taken ‘Avg, Answer Time Avg. Correct Answer Time ‘Answer Time
+(e}
+pee
+00:00:28
+
+Correct
+
+© races Ag. Session Duration
+
+GB beeen
+
+Review Category Tag Breakdown Reports
+
+Review All
+
+Preview Time > Difficultys AS
+
+Arecent security flaw allowed a malicious actor to access sensitive data even though the S6 secs Difficult
+data never left the server and there is full drive encryptio.
+
+Review
+
+What BEST describes text that is not encrypted? Plaintext Ciphertext Algorithm 26 secs, Easy Review
+Cryptanalysis
+‘A consultancy recommended that a large construction company should encrypt its Amin 41 secs Moderate Review
+
+wireless network. Currently, the network is set to open and allows any
+
+A coffee chain hired a marketing firm to set up a website that allows sign-ups. However, 1 min 39 secs Moderate Review
+after testing the website, an error message in the browser st.
+
+sole proprietorship construction company contacted an information technology ((T) 25 secs Easy Review
+consultant for technical support for 2 computer issue. After resol.
+
+A Certificate Authority (CA) had its issuing authority revoked, and its certificates expired, 14secs Moderate Review
+How might those certificates still appear valid, even th.
+
+Assecurity consultant is working with a client to improve security practices. How can the 58 secs Moderate Review
+
+consultant describe cryptographic hashing so the client is m.
+
+°o
+°o
+°o
+°o
+°o
+°o
+°o
+°o
+
+Why might a company want a longer key length? To improve the performance of the a2secs Easy
+@ Support algorithm To slow down the initial encryption To increase the cha.
+
+Review
+
+n 22:37
+Q Search ars2ser ©

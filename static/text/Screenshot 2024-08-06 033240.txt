@@ -1,0 +1,15 @@
+An engineering firm wants to implement an authentication design that uses a framework for passwordless
+authentication, What statement is not accurate regarding passwordless authentication?
+
+A. The user chooses either a roaming authenticator, such as a security key, or a platform authenticator
+implemented by the device OS.
+
+8. The relying party uses a private key to verify the signature and authenticate the account session.
+C. The user registers with a web application or service, referred to as a relying party.
+
+D. When presented with an authentication challenge, the user performs the local gesture to unlock the private
+key.
+
+A x
+|e
+Cc

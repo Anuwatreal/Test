@@ -1,0 +1,5 @@
+1SO27001
+
+ISO created ISO 27001 to counter increasingly sophisticated attacks against information systems.
+To protect valuable private data, companies needed to hold themselves to a comprehensive set
+of rigorous security standards.

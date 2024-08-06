@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images and Extract Text</title>
+    <style>
+        .flash-message {
+            margin-top: 20px;
+            color: red;
+            font-size: 20px;
+        }
+        .flash2-message {
+            margin-top: 20px;
+            color: green;
+            font-size: 20px;
+        }
+        .uploading-message {
+            margin-top: 20px;
+            color: blue;
+            font-size: 20px;
+            display: none; /* Hidden by default */
+        }
+        .flash-hidden {
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Images</h1>
+
+    <!-- ฟอร์มอัปโหลดรูปภาพ -->
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('index') }}" id="uploadForm">
+        <h2>Upload Images for Extraction</h2>
+        <input type="file" name="images" accept="image/*" multiple required>
+        <input type="submit" value="Upload Images">
+        <div class="uploading-message" id="uploadingMessage">Uploading...</div>
+    </form>
+
+    <!-- แสดงผลข้อความจาก flash message -->
+    <div class="flash-message" id="flashMessage">
+        {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            <ul>
+              {% for category, message in messages %}
+                {% if category == 'message' %}
+                  <li class="flash-message">{{ message }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
+
+    <div class="flash2-message" id="flash2Message">
+        {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            <ul>
+              {% for category, message in messages %}
+                {% if category == 'message2' %}
+                  <li class="flash2-message">{{ message }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
+
+    <!-- ฟอร์มอัปโหลดรูปภาพเพื่อการเปรียบเทียบ -->
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('find') }}">
+        <h2>Upload Image to Compare</h2>
+        <input type="file" name="compare_image" accept="image/*" required>
+        <input type="submit" value="Find">
+    </form>
+
+    <!-- ผลลัพธ์การเปรียบเทียบ (ถ้ามี) -->
+    {% if compare_result %}
+        <h2>Comparison Result</h2>
+        <p>Closest match is from: {{ compare_result.closest_filename }}</p>
+        <p>Similarity: {{ compare_result.similarity }}</p>
+        <img src="{{ url_for('find_image', filename=compare_result.closest_filename) }}" alt="Closest match" style="max-width: 500px;">
+    {% endif %}
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function() {
+            // ซ่อนข้อความ flash เมื่อกดปุ่ม
+            document.getElementById('flashMessage').classList.add('flash-hidden');
+            document.getElementById('flash2Message').classList.add('flash-hidden');
+            // แสดงข้อความ "Uploading..."
+            document.getElementById('uploadingMessage').style.display = 'block';
+        });
+
+        // ฟังก์ชันนี้สามารถใช้ในกรณีที่ต้องการให้ข้อความ "Uploading..." หายไปหลังจากการโหลดเสร็จ
+        function resetFlashMessages() {
+            setTimeout(function() {
+                document.getElementById('uploadingMessage').style.display = 'none';
+                // ตรวจสอบการแสดงข้อความ flash หลังจากการอัปโหลด
+                document.getElementById('flashMessage').classList.remove('flash-hidden');
+                document.getElementById('flash2Message').classList.remove('flash-hidden');
+            }, 3000); // Adjust the time (3000 ms = 3 seconds) as needed
+        }
+
+        // เรียกใช้งานฟังก์ชันเพื่อแสดงข้อความ "Uploading..." และซ่อนข้อความ flash หลังจากโหลดหน้าใหม่
+        window.addEventListener('load', resetFlashMessages);
+    </script>
+</body>
+</html>

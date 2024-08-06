@@ -1,0 +1,16 @@
+A recently hired information technology manager wants to implement more automation regarding the onboarding
+
+x A
+
+procedure. What process describes setting up accounts so a new employee can automatically access the software
+and file shares from the human resource platform?, x B
+A. Multifactor authentication
+
+x €
+8. Following least privilege
+
+x D
+C. Enabling a password reuse policy
+
+D. Provisioning
+

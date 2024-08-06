@@ -1,0 +1,17 @@
+A chief information security officer (CISO) wants to enhance the identity and access management security
+procedures in the company by adding an extra layer on top of the existing procedures. Which of the following
+would help achieve this objective by requiring verification through multiple methods or by tying authentication
+to a geographic area? (Select the two best options.)
+
+A. Increase password length
+
+8, Enable password history
+
+C. Enforce multifactor authentication
+
+D. Enable location-based authentication
+
+A x
+
+oe
+i

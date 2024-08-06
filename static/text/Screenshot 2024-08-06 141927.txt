@@ -1,0 +1,14 @@
+e » ISMS scope
+
+x3 Decide what type of information your ISMS needs to
+
+protect. What do your customers expect to be included in
+your ISO 27001 certificate?
+
+ISO 27,001 says that in order to establish the scope of the Isms, the company must
+consider the external and internal issues part of the context discussed by us earlier.
+
+So, the scope will have to clarify what activities, what processes, and which
+organizational units are covered by the isms.
+
+28

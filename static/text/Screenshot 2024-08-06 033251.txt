@@ -1,0 +1,15 @@
+An employee traveling in Europe for vacation submitted a ticket as they could not access their work email.
+Which policy does the company use?
+
+A. Password management
+8, Password age
+C. Multifactor authentication
+
+D. Location-based authentication
+
+Location-based access policies would need a temporary exemption option to allow for travel. Location-based
+access policies prevent access to company systems outside a specified area (typically the company’s state).
+
+A x
+B
+c
