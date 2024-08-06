@@ -9,12 +9,12 @@ app = Flask(__name__)
 app.secret_key = 'supersecretkey'
 
 # กำหนดเส้นทางไปยัง tesseract.exe
-pytesseract.pytesseract.tesseract_cmd = r'tess/tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'testweb/tess/tesseract.exe'
 
 # โฟลเดอร์สำหรับเก็บไฟล์อัปโหลด
-UPLOAD_FOLDER = 'static/uploads'
-TEXT_FOLDER = 'static/text'
-COMPARE_FOLDER = 'static/want_to_find'
+UPLOAD_FOLDER = 'testweb/static/uploads'
+TEXT_FOLDER = 'testweb/static/text'
+COMPARE_FOLDER = 'testweb/static/want_to_find'
 
 # สร้างโฟลเดอร์ถ้ายังไม่มี
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -96,7 +96,7 @@ def find():
                     return render_template('index.html', compare_result=compare_result)
     return redirect(url_for('index'))
 
-@app.route('/find_image/<filename>')
+@app.route('/testweb/find_image/<filename>')
 def find_image(filename):
     return send_from_directory(UPLOAD_FOLDER, f"{filename}.png")
 
